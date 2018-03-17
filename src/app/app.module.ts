@@ -7,27 +7,23 @@ import { APP_ROUTES } from './app.routes';
 // Módulos
 import { PagesModule } from './pages/pages.module';
 
+// Componentes
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
+
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent,
-    //NopagefoundComponent,
-    // DashboardComponent,
-    // ProgressComponent,
-    // Graficas1Component,
-    // PagesComponent,
-    // HeaderComponent,
-    // SidebarComponent,
-    // BreadcrumbsComponent    
+    LoginComponent   
   ],
   imports: [
     BrowserModule,
     PagesModule,
-    APP_ROUTES
+    APP_ROUTES,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
