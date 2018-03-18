@@ -1,1 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Para que al poner el cursor encima, se transforme el puntero en una mano */
+/* Esto se usa en el account-settings.html */
+#themecolors a{
+    cursor: pointer; 
+}
