@@ -18,7 +18,7 @@ export class ProgressComponent implements OnInit {
   }
 
   actualizar( event:number ){
-    console.log('Evento: ',event);
+    //console.log('Evento: ',event);
     this.progreso1 = event;
   }
 

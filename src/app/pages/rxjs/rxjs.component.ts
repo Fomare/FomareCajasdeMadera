@@ -77,8 +77,8 @@ export class RxjsComponent implements OnInit, OnDestroy {
       }
        
 
-      console.log('Filter', valor, index)
-      return true;
+      //console.log('Filter', valor, index)
+      //return true;
 
     })   // lo ideal es ponerlo después del .map()
 

@@ -12,26 +12,52 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 
 // temporal
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 // Servicios
 import { ServiceModule } from './services/service.module';
+import { AuthService } from './services/auth/auth.service';
+
+// Firebase
+import { AngularFireModule } from 'angularfire2';
+import { firebaseConfig, serviceAccount } from './credentials';
+import { AngularFirestore } from 'angularfire2/firestore';
+import { AngularFireAuth } from 'angularfire2/auth';
+import { AngularFireDatabase } from 'angularfire2/database';
+import { AuthGuard } from './auth/auth.guard';
+// FireAdmin
+import * as admin from 'firebase-admin';
+
+import * as nodemailer from 'nodemailer';
+
+
+// import { AngularFirestoreModule } from 'angularfire2/firestore';
+// import { AngularFireStorageModule } from 'angularfire2/storage';
+// import { AngularFireAuthModule } from 'angularfire2/auth';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent   
+    LoginComponent    
   ],
   imports: [
     BrowserModule,
     PagesModule,
     APP_ROUTES,
     FormsModule,
-    ServiceModule
+    ReactiveFormsModule,
+    ServiceModule,
+    AngularFireModule.initializeApp(firebaseConfig)
+   
+    //AngularFireAuthModule 
   ],
   providers: [
-    
+    AuthService,
+    AngularFirestore,
+    AngularFireAuth,
+    AngularFireDatabase,
+    AuthGuard
   ],
   bootstrap: [AppComponent]
 })

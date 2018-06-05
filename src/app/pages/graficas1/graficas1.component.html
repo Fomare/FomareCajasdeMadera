@@ -1,3 +1,5 @@
+<div class="animated fadeIn">
+  <h1><strong> ESTAS GRÁFICAS NO REPRESENTAN DATOS REALES. ESTÁN CREADAS CON DATOS DE PRUEBA</strong></h1>
 <div class="row">
 
   <div class="col-6">
@@ -25,7 +27,7 @@
       <app-grafico-dona
           [chartLabels]="graficos.grafico2.labels"
           [chartData]="graficos.grafico2.data"
-          chartType="doughnut">
+          chartType="pie">
       </app-grafico-dona>
 
       </div>
@@ -45,7 +47,7 @@
       <app-grafico-dona
           [chartLabels]="graficos.grafico3.labels"
           [chartData]="graficos.grafico3.data"
-          chartType="doughnut">
+          chartType="bar">
       </app-grafico-dona>
 
       </div>
@@ -61,11 +63,12 @@
         <app-grafico-dona
           [chartLabels]="graficos.grafico4.labels"
           [chartData]="graficos.grafico4.data"
-          chartType="doughnut">
+          chartType="line">
         </app-grafico-dona>
 
       </div>
     </div>
   </div>
 
+</div>
 </div>

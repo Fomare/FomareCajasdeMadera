@@ -9,28 +9,28 @@ export class Graficas1Component implements OnInit {
 
   graficos: any = {
     'grafico1': {
-      'labels': ['Con Frijoles', 'Con Natilla', 'Con tocino'],
+      'labels': ['Empresa 1', 'Empresa 2', 'Empresa 3'],
       'data':  [24, 30, 46],
       'type': 'doughnut',
-      'leyenda': 'El pan se come con'
+      'leyenda': 'Pedidos por usuario'
     },
     'grafico2': {
-      'labels': ['Hombres', 'Mujeres'],
-      'data':  [4500, 6000],
-      'type': 'doughnut',
-      'leyenda': 'Entrevistados'
+      'labels': ['Producto1', 'Producto 2','Producto 3','Producto 4','Producto 5','Producto 6',],
+      'data':  [4500, 6000, 20, 133, 1000, 3333],
+      'type': 'pie',
+      'leyenda': 'Pedidos por producto'
     },
     'grafico3': {
-      'labels': ['Si', 'No'],
-      'data':  [95, 5],
-      'type': 'doughnut',
-      'leyenda': '¿Le dan gases los frijoles?'
+      'labels': ['Ene', 'Feb','Mar', 'Abr','May', 'Jun','Jul', 'Ago','Sep', 'Oct','Nov', 'Dic'],
+      'data':  [95, 55, 35, 65, 88, 89, 99, 100, 122, 133, 144, 200],
+      'type': 'bar',
+      'leyenda': 'Pedidos por mes'
     },
     'grafico4': {
-      'labels': ['No', 'Si'],
-      'data':  [85, 15],
-      'type': 'doughnut',
-      'leyenda': '¿Le importa que le den gases?'
+      'labels': ['2017', '2018','2019', '2020'],
+      'data':  [2000, 2818,3014, 3988],
+      'type': 'line',
+      'leyenda': 'Pedidos por año'
     },
   };
 
